@@ -7,3 +7,35 @@
 
   include everything docker has to offer
 */
+
+
+//How to create a container?
+
+In order to create a container we use the following command:
+
+      Docker run <container>
+
+  Example Running a nginx container:
+
+      Docker run --name nginx_server -d -p 80:80 <nginx>
+
+  Example Running a mysql container:
+
+      Docker run --name mysqlDB -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=True <mysql>
+
+So lets explain...
+
+      Docker run <container>  //This is the basic way to run a container
+
+      -p //Specifies a port example 80:80
+
+      -d //For detach. It means run in the back ground
+
+      -e //For export, same as linux
+
+      --name //To name your container. Very helpful
+
+N.B: "Always check the tons of documentation available online for how to run any
+      container you needed."
+
+      
