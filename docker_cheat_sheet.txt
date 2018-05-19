@@ -9,6 +9,23 @@
 */
 
 
+//How to get an image?
+
+That is a very simple task, Use:
+
+      Docker image <image_name>
+
+  Example for running ubuntu:
+
+      Docker pull ubuntu
+
+      docker pull kalilinux/kali-linux-docker
+
+//How to remove an image
+
+      Docker rmi <cha> 
+
+
 //How to create a container?
 
 In order to create a container we use the following command:
@@ -35,7 +52,9 @@ So lets explain...
 
       --name //To name your container. Very helpful
 
+      -t //terminal
+
+      -i //interactive
+
 N.B: "Always check the tons of documentation available online for how to run any
       container you needed."
-
-      
