@@ -24,7 +24,6 @@ That is a very simple task, Use:
 
     ```
         Docker pull ubuntu
-
         docker pull kalilinux/kali-linux-docker
     ```
 
@@ -36,12 +35,13 @@ That is a very simple task, Use:
 
 ### How to remove an image
 
-    ```
-        //Remove image if not in use
-        Docker rmi <cha>    
-        //Stop containers and force remove the image
-        Docker rmi -f <cha>
-    ```
+      ```
+       //Remove image if not in use
+       Docker rmi <cha>    
+       //Stop containers and force remove the image
+       Docker rmi -f <cha>
+      ```
+
     >Please note that images takes lots of space
     so constantly make sure you are erasing unused images
     and containers.
