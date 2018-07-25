@@ -16,30 +16,31 @@ It is my personal cheat sheet.
 ### How to get an image?
 
 That is a very simple task, Use:
+
   ```
       Docker image <image_name>
   ```
   Example for running ubuntu:
 
     ```
-      Docker pull ubuntu
+        Docker pull ubuntu
 
-      docker pull kalilinux/kali-linux-docker
+        docker pull kalilinux/kali-linux-docker
     ```
 
 ### How to check for all available images
 
     ```
-      docker images
+        docker images
     ```
 
 ### How to remove an image
 
     ```
-      //Remove image if not in use
-      Docker rmi <cha>    
-      //Stop containers and force remove the image
-      Docker rmi -f <cha>
+        //Remove image if not in use
+        Docker rmi <cha>    
+        //Stop containers and force remove the image
+        Docker rmi -f <cha>
     ```
     >Please note that images takes lots of space
     so constantly make sure you are erasing unused images
@@ -50,19 +51,19 @@ That is a very simple task, Use:
 ### Create a container:
 
     ```
-      Docker run <container>
+        Docker run <container>
     ```
 
   Example Running a nginx container:
 
     ```
-      Docker run --name nginx_server -d -p 80:80 <nginx>
+        Docker run --name nginx_server -d -p 80:80 <nginx>
     ```
 
   Example Running a mysql container:
 
     ```
-      Docker run --name mysqlDB -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=True <mysql>
+        Docker run --name mysqlDB -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=True <mysql>
     ```
 
 #### So lets explain...
@@ -92,56 +93,56 @@ N.B:
 ### How to check which containers are running?
 
   ```
-    Old way: Docker ps  (I personally like it)
-    new way: Docker container ls
+      Old way: Docker ps  (I personally like it)
+      new way: Docker container ls
   ```
 
 ### How to see all containers created?
 
   ```
-    Old way: Docker ps -a
-    new way: Docker container ls -a
+      Old way: Docker ps -a
+      new way: Docker container ls -a
   ```
 
 ### How to remove a container?
 
   ```
-    1- Docker stop <container_name OR cha>
-    2- Docker rm <container_name OR cha>
+      1- Docker stop <container_name OR cha>
+      2- Docker rm <container_name OR cha>
   ```
 
 ### How to show the logs of a detached container?
 
   ```
-    Docker container logs <container_name>
+      Docker container logs <container_name>
   ```
 
 ### How to see how a container was configured (in a JSON format)?
 
   ```
-    Docker container inspect <container_name>
+      Docker container inspect <container_name>
   ```
 
 ### How to monitor all running processes live?
 
   ```
-    Docker container stats
+      Docker container stats
   ```
 
 ### How to view processes running inside a container?
 
   ```
-    Docker container top
+      Docker container top
   ```
 
 ### How to access a container that didn't have an -it option when configured?
 
   ```
-    Docker container exec -it <kernal> <container_name>
+      Docker container exec -it <kernal> <container_name>
   ```
 
 ### How to access a container that already has an -it tag on it?
 
   ```
-    Docker container start -ai <container_name>
+      Docker container start -ai <container_name>
   ```
