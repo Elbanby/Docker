@@ -35,12 +35,12 @@ That is a very simple task, Use:
 
 ### How to remove an image
 
-      ```
+      
        //Remove image if not in use
        Docker rmi <cha>    
        //Stop containers and force remove the image
        Docker rmi -f <cha>
-      ```
+
 
     >Please note that images takes lots of space
     so constantly make sure you are erasing unused images
@@ -62,9 +62,9 @@ That is a very simple task, Use:
 
   Example Running a mysql container:
 
-    ```
+  ```
         Docker run --name mysqlDB -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=True <mysql>
-    ```
+  ```
 
 #### So lets explain...
       //This is the basic way to run a container
