@@ -18,9 +18,7 @@ It is my personal cheat sheet.
 That is a very simple task, Use:
 
     ```
-
-    Docker image <image_name>
-    
+      Docker image <image_name>
     ```
 
   Example for running ubuntu:
