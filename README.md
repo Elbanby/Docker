@@ -28,17 +28,19 @@ That is a very simple task, Use:
     ```
 
 ### How to check for all available images
+
     ```
       docker images
     ```
 
 ### How to remove an image
+
     ```
       //Remove image if not in use
       Docker rmi <cha>    
       //Stop containers and force remove the image
       Docker rmi -f <cha>
-      ```
+    ```
     >Please note that images takes lots of space
     so constantly make sure you are erasing unused images
     and containers.
@@ -88,6 +90,7 @@ N.B:
 
 
 ### How to check which containers are running?
+
   ```
     Old way: Docker ps  (I personally like it)
     new way: Docker container ls
@@ -101,12 +104,14 @@ N.B:
   ```
 
 ### How to remove a container?
+
   ```
     1- Docker stop <container_name OR cha>
     2- Docker rm <container_name OR cha>
   ```
 
 ### How to show the logs of a detached container?
+
   ```
     Docker container logs <container_name>
   ```
@@ -118,6 +123,7 @@ N.B:
   ```
 
 ### How to monitor all running processes live?
+
   ```
     Docker container stats
   ```
