@@ -17,9 +17,9 @@ It is my personal cheat sheet.
 
 That is a very simple task, Use:
 
-  ```
+  
       Docker image <image_name>
-  ```
+
   Example for running ubuntu:
 
 
@@ -39,9 +39,7 @@ That is a very simple task, Use:
       //Stop containers and force remove the image
       Docker rmi -f <cha>
 
-
-    >Please note that images takes lots of space so     constantly make sure you are erasing unused images
-    and containers.
+>Please note that images takes lots of space so     constantly make sure you are erasing unused images and containers.
 
 ## How to create a container?
 
