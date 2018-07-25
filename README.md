@@ -23,46 +23,45 @@ That is a very simple task, Use:
   Example for running ubuntu:
 
 
-        Docker pull ubuntu
-        docker pull kalilinux/kali-linux-docker
+      Docker pull ubuntu
+      docker pull kalilinux/kali-linux-docker
 
 
 ### How to check for all available images
 
-        docker images
+      docker images
 
 ### How to remove an image
 
 
-       //Remove image if not in use
-       Docker rmi <cha>    
-       //Stop containers and force remove the image
-       Docker rmi -f <cha>
+      //Remove image if not in use
+      Docker rmi <cha>    
+      //Stop containers and force remove the image
+      Docker rmi -f <cha>
 
 
-    >Please note that images takes lots of space
-    so constantly make sure you are erasing unused images
+    >Please note that images takes lots of space so     constantly make sure you are erasing unused images
     and containers.
 
 ## How to create a container?
 
 ### Create a container:
 
-    ```
+
         Docker run <container>
-    ```
+
 
   Example Running a nginx container:
 
-    ```
+
         Docker run --name nginx_server -d -p 80:80 <nginx>
-    ```
+
 
   Example Running a mysql container:
 
-  ```
+
         Docker run --name mysqlDB -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=True <mysql>
-  ```
+
 
 #### So lets explain...
       //This is the basic way to run a container
