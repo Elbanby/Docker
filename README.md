@@ -22,10 +22,10 @@ That is a very simple task, Use:
   ```
   Example for running ubuntu:
 
-    ```
+
         Docker pull ubuntu
         docker pull kalilinux/kali-linux-docker
-    ```
+    
 
 ### How to check for all available images
 
@@ -35,7 +35,7 @@ That is a very simple task, Use:
 
 ### How to remove an image
 
-      
+
        //Remove image if not in use
        Docker rmi <cha>    
        //Stop containers and force remove the image
