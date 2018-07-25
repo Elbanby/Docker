@@ -25,13 +25,11 @@ That is a very simple task, Use:
 
         Docker pull ubuntu
         docker pull kalilinux/kali-linux-docker
-    
+
 
 ### How to check for all available images
 
-    ```
         docker images
-    ```
 
 ### How to remove an image
 
