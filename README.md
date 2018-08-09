@@ -17,7 +17,7 @@ It is my personal cheat sheet.
 
 That is a very simple task, Use:
 
-  
+
       Docker image <image_name>
 
   Example for running ubuntu:
@@ -133,7 +133,8 @@ N.B:
 ### How to access a container that didn't have an -it option when configured?
 
   ```
-      Docker container exec -it <kernal> <container_name>
+    docker exec -it <container name> <command>
+    docker exec -it <container name> /bin/bash
   ```
 
 ### How to access a container that already has an -it tag on it?
